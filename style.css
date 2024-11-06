@@ -1,74 +1,48 @@
-/* Reset */
+/* General Styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-/* Body and Fonts */
-body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
 }
 
 /* Navbar */
+.header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: #333;
 }
-
-.navbar .logo {
-    color: #fff;
-    font-size: 1.5em;
-}
-
 .nav-links {
     list-style: none;
+    display: flex;
 }
-
 .nav-links li {
-    display: inline;
     margin-left: 20px;
 }
-
-.nav-links a {
-    color: #fff;
+.nav-links a, .cta-button {
+    color: white;
     text-decoration: none;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
 }
 
 /* Hero Section */
 .hero {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    padding: 50px;
-    background: #f0f0f0;
+    padding: 50px 20px;
+    text-align: center;
+    background: #f4f4f4;
 }
-
-.hero-text {
-    max-width: 50%;
-}
-
-.hero-text h1 {
-    font-size: 2.5em;
-    color: #333;
-}
-
-.cta-button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
 .hero-image img {
     max-width: 100%;
-    height: auto;
 }
 
 /* Services Section */
@@ -76,62 +50,48 @@ body {
     padding: 50px;
     text-align: center;
 }
-
-.services h2 {
-    font-size: 2em;
-    color: #333;
-}
-
 .service-cards {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 20px;
 }
-
 .card {
     background: #fff;
     padding: 20px;
-    border-radius: 8px;
     width: 30%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-
 .card img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
-    border-radius: 8px;
 }
 
-.card h3 {
-    font-size: 1.5em;
-    margin-top: 10px;
+/* Contact Section */
+.contact {
+    padding: 50px;
+    background: #333;
+    color: white;
+    text-align: center;
 }
 
 /* Footer */
-footer {
+.footer {
     padding: 20px;
-    background: #333;
-    color: #fff;
     text-align: center;
+    background-color: #222;
+    color: white;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .hero {
+    .navbar ul {
         flex-direction: column;
+    }
+    .hero {
         text-align: center;
     }
-
-    .hero-text, .hero-image {
-        max-width: 100%;
-    }
-
     .service-cards {
         flex-direction: column;
-    }
-
-    .card {
-        width: 100%;
-        margin-bottom: 20px;
     }
 }
