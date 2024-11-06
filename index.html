@@ -9,26 +9,28 @@
 <body>
 
     <!-- Header -->
-    <header>
+    <header class="header">
         <nav class="navbar">
             <div class="logo">Porter</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <a href="#" class="cta-button">Book Now</a>
         </nav>
     </header>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-text">
-            <h1>On-Demand Logistics for Your Business</h1>
-            <p>Reliable and quick service, anytime, anywhere.</p>
-            <a href="#services" class="cta-button">Get Started</a>
+        <div class="hero-content">
+            <h1>Your On-Demand Logistics Partner</h1>
+            <p>Fast, reliable, and efficient delivery services at your fingertips.</p>
+            <a href="#services" class="cta-button">Learn More</a>
         </div>
         <div class="hero-image">
-            <img src="hero-image.jpg" alt="Delivery Service">
+            <img src="images/hero-image.jpg" alt="Delivery Image">
         </div>
     </section>
 
@@ -37,27 +39,37 @@
         <h2>Our Services</h2>
         <div class="service-cards">
             <div class="card">
-                <img src="service1.jpg" alt="Bike Delivery">
+                <img src="images/bike-delivery.jpg" alt="Bike Delivery">
                 <h3>Bike Delivery</h3>
-                <p>Fast and efficient delivery for small packages.</p>
+                <p>Quick and convenient for smaller packages.</p>
             </div>
             <div class="card">
-                <img src="service2.jpg" alt="Truck Delivery">
+                <img src="images/truck-delivery.jpg" alt="Truck Delivery">
                 <h3>Truck Delivery</h3>
-                <p>Reliable truck service for heavy cargo.</p>
+                <p>Reliable truck service for larger items.</p>
             </div>
             <div class="card">
-                <img src="service3.jpg" alt="Courier Service">
+                <img src="images/courier.jpg" alt="Courier Service">
                 <h3>Courier Service</h3>
-                <p>Same-day courier service for urgent needs.</p>
+                <p>Fast and secure for time-sensitive deliveries.</p>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="cta-button">Submit</button>
+        </form>
+    </section>
+
+    <footer class="footer">
         <p>&copy; 2024 Porter Clone. All rights reserved.</p>
-        <div class="social-media">
+        <div class="social-links">
             <a href="#">Facebook</a>
             <a href="#">Twitter</a>
             <a href="#">Instagram</a>
